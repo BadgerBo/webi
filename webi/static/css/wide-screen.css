@@ -1,0 +1,288 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    background: -webkit-radial-gradient(0% 50%, ellipse cover, #0D8568, #F08080);
+    background: -o-radial-gradient(0% 50%, ellipse cover, #0D8568, #F08080);
+    background: -moz-radial-gradient(0% 50%, ellipse cover, #0D8568, #F08080);
+    background: -ms-radial-gradient(0% 50%, ellipse cover, #0D8568, #F08080);
+    padding: 0px;
+    margin: 0px;
+}
+
+::selection {
+    color: white;
+    background: #5A5A5A;
+}
+
+.narrow {
+    display: none;
+}
+
+/* HEADER */
+
+header {
+    width: 100%;
+    height: 360px;
+    background-image: url("../images/header.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-clip: padding-box;
+    background-size: cover;
+    position: relative;
+}
+
+header img {
+    width: 200px;
+    height: 200px;
+    border: 2px solid #E1E1E1;
+    border-radius: 10%;
+    position: absolute;
+    right: 0px;
+    margin: 80px;
+}
+
+header a {
+    font-size: 55px;
+    color: white;
+    text-shadow: 1px 1px 1px #BCBEBD;
+    text-decoration: none;
+    position: absolute;
+    bottom: 0px;
+    margin: 80px;
+}
+
+/* NAVIGATION */
+
+nav {
+	width: 100%;
+	text-align: center;
+    display: inline-block;
+    padding: 0%;
+	margin: 0%;
+}
+
+nav table {
+	width: 100%;
+    table-layout: fixed;
+    padding: 0.7%;
+	margin: 0%;
+	border-bottom: groove black;
+}
+
+nav td a {
+	text-decoration: none;
+	color: black;
+	padding: 1em;
+	text-shadow: 0.5px 0.5px 1px #626567;
+}
+
+nav td a.active {
+	color: white;
+}
+
+nav td a:hover {
+    background: #b19891;
+}
+
+nav td a.active:hover {
+    color: white;
+    background: none;
+}
+
+/* MAIN */
+
+main {
+    padding: 40px 80px 40px 80px;
+}
+
+main p {
+    text-align: justify;
+    text-indent: 1.5em;
+    line-height: 150%;
+    padding: 1% 0%;
+    margin: 0%;
+}
+
+main home p#greeting {
+	padding: 0% 30%;
+	text-align: center;
+}
+
+/* MAIN: ABOUT */
+
+about ul {
+    padding-left: 8%;
+    margin: 0%;
+}
+
+about li {
+    font-size: 24px;
+    list-style-type: circle;
+    text-align: left;
+    line-height: 80%;
+    line-height: 150%;
+    padding: 0.5% 0%;
+    margin: 0%;
+}
+
+/* MAIN: SKILLS */
+
+skills li {
+    text-align: center;
+    font-size: 30px;
+    list-style-type: none;
+    margin-bottom: 15px;
+    margin-top: 30px;
+}
+
+skills progress {
+    margin-top: 15px;
+    width: 80%;
+    height: 40px;
+    color: #3fb6b2;
+    background: #E1E1E1;
+    border: 1.5px solid black;
+    box-shadow: 1px 1px 2px #424242;
+    -webkit-appearance: none;
+}
+
+::-webkit-progress-bar {
+    background-color: #E1E1E1;
+}
+
+::-webkit-progress-value {
+    background-color: #669669;
+} 
+
+::-moz-progress-bar {
+    background-color: #669669;
+}
+
+/* MAIN: PORTFOLIO */
+
+portfolio table {
+    text-align: left;
+    border-collapse: collapse;
+}
+
+portfolio th {
+	font-weight: lighter;
+	text-shadow: 1px 1px 1.5px #626567;
+}
+
+portfolio td.screenshot a img {
+	width: 100%;
+    box-shadow: 0px 0px 10px black;
+}
+
+portfolio td.screenshot a img:hover {
+    transform: scale(1.01);
+}
+
+portfolio td.links a img {
+    width: 75px;
+    height: 75px;
+    opacity: 0.7;
+    box-shadow: none;
+    padding: 0% 5%;
+}
+
+portfolio td.links a img:hover {
+    transform: scale(1.2);
+}
+
+/* MAIN: CONTACTS */
+
+contacts {
+    height: 400px;
+    display: block;
+    position: relative;
+    padding: 0px;
+}
+
+contacts links {
+    position: absolute;
+    width: 25%;
+    left: 0px;
+    padding: 0px;
+    border-right: groove black;
+}
+
+contacts links a {
+    text-decoration: none;
+    margin: 5px;
+}
+
+contacts links img {
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100px;
+    width: 100px;
+}
+
+contacts links img:hover {
+    transform: scale(1.1);
+}
+
+contacts email {
+    text-align: center;
+    position: absolute;
+    width: 75%;
+    right: 0px;
+    padding-top: 20px;
+}
+
+contacts email input, textarea {
+    margin-bottom: 10px;
+    font-size: 14pt;
+    padding: 15px 10px 10px;
+    border: 1px solid #3C6B59;
+    background-color: #E1E1E1;
+    color: black;
+    width: 80%;
+    outline: none;
+}
+
+contacts email textarea {
+    height: 150px;
+}
+
+contacts email .submit {
+    background-color: #3C6B59;
+    cursor: pointer;
+    width: 80%;
+    color: white;
+    border: none;
+    outline: none;
+    border: 1px solid black;
+}
+
+contacts email .submit:hover {
+    opacity: 0.8;
+}
+
+/* FOOTER */
+
+footer {
+    height: 70px;
+    border-top: groove black;
+}
+
+footer language img {
+    width: 50px;
+    position: fixed;
+    bottom: 5px;
+    left: 15px;
+}
+
+footer copyright {
+    font-size: 14px;
+    color: #E1E1E1;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+}

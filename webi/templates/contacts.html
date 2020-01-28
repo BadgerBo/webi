@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% set active_page = "contacts" %}
+
+    {% block content %}
+        <contacts>
+            <links>
+                <a href="https://t.me/BadgerBo/" target="_black">
+                    <img alt="Telegram" src="{{ url_for('static', filename='images/logo-telegram.png') }}">
+                </a>
+                <a href="https://github.com/BadgerBo" target="_black">
+                    <img alt="GitHub" src="{{ url_for('static', filename='images/logo-github.png') }}">
+                </a>
+                <a href="https://www.sololearn.com/Profile/15917621/" target="_blank">
+                    <img alt="SoloLearn" src="{{ url_for('static', filename='images/logo-sololearn.png') }}">
+                </a>
+            </links>
+
+            <email>
+                <form action="https://formspree.io/0099bo@gmail.com" method="POST">
+                    <input name="name" placeholder="{{_('Name')}}" type="text" required=""><br>
+                    <input name="email" placeholder="{{_('Email')}}" type="email" required=""><br>
+                    <textarea name="message" placeholder="{{_('Message')}}" required=""></textarea>
+                    <input type="submit" value="{{_('SEND')}}" class="submit">
+                </form>
+            </email>
+        </contacts>
+    {% endblock %}
