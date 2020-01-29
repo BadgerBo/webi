@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2020-01-26 19:14+0300\n"
+"POT-Creation-Date: 2020-01-29 16:40+0300\n"
 "PO-Revision-Date: 2019-12-28 17:32+0300\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
@@ -19,27 +19,27 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.8.0\n"
 
-#: app/blueprints/multilingual/routes.py:39
+#: webi/blueprints/multilingual/routes.py:39
 msgid "home"
 msgstr ""
 
-#: app/blueprints/multilingual/routes.py:45
+#: webi/blueprints/multilingual/routes.py:45
 msgid "about"
 msgstr ""
 
-#: app/blueprints/multilingual/routes.py:51
+#: webi/blueprints/multilingual/routes.py:51
 msgid "skills"
 msgstr ""
 
-#: app/blueprints/multilingual/routes.py:57
+#: webi/blueprints/multilingual/routes.py:57
 msgid "portfolio"
 msgstr ""
 
-#: app/blueprints/multilingual/routes.py:63
+#: webi/blueprints/multilingual/routes.py:63
 msgid "contacts"
 msgstr ""
 
-#: app/templates/about.html:6
+#: webi/templates/about.html:6
 msgid ""
 "My name is Olesya Barsukova. I prefer when people just call me Lesya. I "
 "am 23 years old. I was born in the northern town named Murmansk, which is"
@@ -49,7 +49,7 @@ msgstr ""
 "просто Леся. Мне 23 года. Родилась я в северном городе под названием "
 "Мурманск, который расположен за границей Полярного круга."
 
-#: app/templates/about.html:7
+#: webi/templates/about.html:7
 msgid ""
 "In 2015 applied to State University of Industrial Technologies and Design"
 " and moved to Saint-Petersburg. In 2019 I obtained a Bachelor Honours "
@@ -61,7 +61,7 @@ msgstr ""
 "&laquo;Экономика&raquo;. Среди всех дисциплин мне больше всех нравились "
 "Высшая Математика, Статистика и Деловой Английский Язык."
 
-#: app/templates/about.html:9
+#: webi/templates/about.html:9
 msgid ""
 "Also, during the Computer Science cource, I faced basic concepts of "
 "Database. My high involvment in completing practical tasks revealed me "
@@ -77,75 +77,71 @@ msgstr ""
 "время, я изо всех сил стараюсь каждый день улучшать свои навыки, чтобы "
 "получить работу в этой постоянно растущей и прогрессирующей сфере."
 
-#: app/templates/about.html:10
+#: webi/templates/about.html:10
 msgid "Some facts about me:"
 msgstr "Некоторые факты обо мне:"
 
-#: app/templates/about.html:12
+#: webi/templates/about.html:12
 msgid "I like my name because it reminds me of forest"
 msgstr "Я люблю свое имя, потому что оно напоминает мне о лесной природе"
 
-#: app/templates/about.html:13
+#: webi/templates/about.html:13
 msgid "I am half Balarusian"
 msgstr "Я наполовину Белоруска"
 
-#: app/templates/about.html:14
+#: webi/templates/about.html:14
 msgid "I dream to see Sequoia Tree someday"
 msgstr "Я мечтаю когда-нибудь вживую увидеть секвойю"
 
-#: app/templates/about.html:15
+#: webi/templates/about.html:15
 msgid "I usually eat kiwi with a skin"
 msgstr "Обычно я ем киви со шкуркой"
 
-#: app/templates/about.html:16
+#: webi/templates/about.html:16
 msgid "Photograph of jellyfish was taken at St. Petersburg's Oceanarium"
 msgstr "Фотография этих медуз была сделана в Питерском Океанариуме"
 
-#: app/templates/base.html:12
-msgid "Badger"
-msgstr "Барсук в Лесу"
-
-#: app/templates/base.html:24
+#: webi/templates/base.html:12 webi/templates/base.html:24
 msgid "Olesya Barsukova"
 msgstr "Олеся Барсукова"
 
-#: app/templates/base.html:30 app/templates/base.html:40
+#: webi/templates/base.html:30 webi/templates/base.html:40
 msgid "About Me"
 msgstr "Обо Мне"
 
-#: app/templates/base.html:31 app/templates/base.html:41
+#: webi/templates/base.html:31 webi/templates/base.html:41
 msgid "Skillset"
 msgstr "Навыки"
 
-#: app/templates/base.html:32 app/templates/base.html:44
+#: webi/templates/base.html:32 webi/templates/base.html:44
 msgid "Portfolio"
 msgstr "Портфолио"
 
-#: app/templates/base.html:33 app/templates/base.html:45
+#: webi/templates/base.html:33 webi/templates/base.html:45
 msgid "Contact Info"
 msgstr "Контактная информация"
 
-#: app/templates/base.html:64
+#: webi/templates/base.html:64
 msgid "All rights reserved."
 msgstr "Все права защищены"
 
-#: app/templates/contacts.html:20
+#: webi/templates/contacts.html:20
 msgid "Name"
 msgstr "Имя"
 
-#: app/templates/contacts.html:21
+#: webi/templates/contacts.html:21
 msgid "Email"
 msgstr "Email"
 
-#: app/templates/contacts.html:22
+#: webi/templates/contacts.html:22
 msgid "Message"
 msgstr "Сообщение"
 
-#: app/templates/contacts.html:23
+#: webi/templates/contacts.html:23
 msgid "SEND"
 msgstr "ОТПРАВИТЬ"
 
-#: app/templates/home.html:6
+#: webi/templates/home.html:6
 msgid ""
 "Greetings! You are at the main page of my personal website. Thank you for"
 " visiting and Welcome! :)"
@@ -153,11 +149,11 @@ msgstr ""
 "Приветствую Вас на главной странице моего личного вебсайта. Благодарю за "
 "посещение и добро пожаловать! :)"
 
-#: app/templates/portfolio.html:8 app/templates/portfolio.html:45
+#: webi/templates/portfolio.html:8 webi/templates/portfolio.html:45
 msgid "Telegram Bot &laquo;Book Advisor&raquo;"
 msgstr "Телеграм Бот &laquo;Book Advisor&raquo;"
 
-#: app/templates/portfolio.html:14 app/templates/portfolio.html:53
+#: webi/templates/portfolio.html:14 webi/templates/portfolio.html:53
 msgid ""
 "In the near future I am going to finish my old project: Telegram Bot "
 "&laquo;Book Advisor&raquo;."
@@ -165,11 +161,11 @@ msgstr ""
 "В ближайшее время я собираюсь закончить свой старый проект: Телеграм-Бот "
 "&laquo;Book Advisor&raquo;."
 
-#: app/templates/portfolio.html:27 app/templates/portfolio.html:66
+#: webi/templates/portfolio.html:27 webi/templates/portfolio.html:66
 msgid "Personal Website"
 msgstr "Личный Вебсайт"
 
-#: app/templates/portfolio.html:33 app/templates/portfolio.html:74
+#: webi/templates/portfolio.html:33 webi/templates/portfolio.html:74
 msgid ""
 "This website is my first attempt in web-development and my first project "
 "as well. The application was created by means of web framework Flask."
@@ -177,7 +173,7 @@ msgstr ""
 "Данный сайт является моей первой попыткой в веб-разработке, а также моим "
 "первым проектом. Приложение было создано с помощью веб-фреймворка Flask."
 
-#: app/templates/skills.html:9 app/templates/skills.html:35
+#: webi/templates/skills.html:9 webi/templates/skills.html:35
 msgid ""
 "My first programming language was C#. At that time I knew nearly nothing "
 "about coding. So, it was a rough challenge, for sure. Nowdays I am still "
@@ -187,7 +183,7 @@ msgstr ""
 "мало. Поэтому, его изучение давалось мне очень тяжело. Я до сих пор "
 "удивлена, что не бросила эту затею еще тогда."
 
-#: app/templates/skills.html:10 app/templates/skills.html:36
+#: webi/templates/skills.html:10 webi/templates/skills.html:36
 msgid ""
 "After some time, I resumed my attempts with Python and fell in love from "
 "the first line. I respect the syntactic beauty and minimalism of this "
@@ -197,7 +193,7 @@ msgstr ""
 "с первой строчки. Мне нравится синтаксическая красота и минимализм этого "
 "языка."
 
-#: app/templates/skills.html:11 app/templates/skills.html:37
+#: webi/templates/skills.html:11 webi/templates/skills.html:37
 msgid ""
 "Recenetly I decided to dive into web-development and started to study "
 "HTML and CSS as well."
@@ -205,7 +201,7 @@ msgstr ""
 "С недавних пор я решила погрузиться в веб-разработку и начала изучать "
 "HTML и CSS."
 
-#: app/templates/skills.html:12 app/templates/skills.html:38
+#: webi/templates/skills.html:12 webi/templates/skills.html:38
 msgid ""
 "Nowadays I take interest in SQL and I am planning to learn more about "
 "data and databases."
@@ -213,9 +209,12 @@ msgstr ""
 "В настоящее время, моим главным интересом является SQL. Я собираюсь "
 "узнать больше о базах данных."
 
-#: app/templates/skills.html:13 app/templates/skills.html:39
+#: webi/templates/skills.html:13 webi/templates/skills.html:39
 msgid "If were to describe my skills, I would do it somehow like this:"
 msgstr ""
 "Если бы меня попросили наглядно описать мои навыки, то я изобразила бы их"
 " примерно так:"
+
+#~ msgid "Badger"
+#~ msgstr "Барсук в Лесу"
 
