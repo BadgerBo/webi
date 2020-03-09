@@ -45,7 +45,7 @@ msgid ""
 "am 23 years old. I was born in the northern town named Murmansk, which is"
 " located beyond the Arctic Circle."
 msgstr ""
-"Мое имя - Олеся Барсукова. Мне нравится, когда меня люди зовут меня "
+"Мое имя - Олеся Барсукова, но мне больше нравится, когда меня люди зовут меня "
 "просто Леся. Мне 23 года. Родилась я в северном городе под названием "
 "Мурманск, который расположен за границей Полярного круга."
 
@@ -153,13 +153,13 @@ msgstr ""
 msgid "Telegram Bot &laquo;Book Advisor&raquo;"
 msgstr "Телеграм Бот &laquo;Book Advisor&raquo;"
 
-#: webi/templates/portfolio.html:14 webi/templates/portfolio.html:53
+#: webi/templates/portfolio.html:14 webi/templates/portfolio.html:54
 msgid ""
-"In the near future I am going to finish my old project: Telegram Bot "
-"&laquo;Book Advisor&raquo;."
+"Bot was created to answer the question &laquo;Which book I want to read "
+"next?&raquo; by recommending particular book from Goodreads.com."
 msgstr ""
-"В ближайшее время я собираюсь закончить свой старый проект: Телеграм-Бот "
-"&laquo;Book Advisor&raquo;."
+"Бот создан чтобы ответить на извечный вопрос &laquo;Какую книгу мне "
+"прочесть следующей?&raquo;. Рекомендованные книги можно найти на Goodread.com"
 
 #: webi/templates/portfolio.html:27 webi/templates/portfolio.html:66
 msgid "Personal Website"
@@ -206,8 +206,7 @@ msgid ""
 "Nowadays I take interest in SQL and I am planning to learn more about "
 "data and databases."
 msgstr ""
-"В настоящее время, моим главным интересом является SQL. Я собираюсь "
-"узнать больше о базах данных."
+"В настоящее время, моим главным интересом является SQL."
 
 #: webi/templates/skills.html:13 webi/templates/skills.html:39
 msgid "If were to describe my skills, I would do it somehow like this:"
