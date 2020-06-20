@@ -39,10 +39,10 @@ def home():
     return render_template('home.html', title=_('home'))
 
 
-# adding route for page 'about'
-@multilingual.route('/about/')
-def about():
-    return render_template('about.html', title=_('about'))
+# adding route for page 'experience'
+@multilingual.route('/experience/')
+def experience():
+    return render_template('experience.html', title=_('experience'))
 
 
 # adding route for page 'skills'
