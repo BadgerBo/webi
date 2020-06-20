@@ -106,16 +106,12 @@ main p {
     margin: 0%;
 }
 
-main home p#greeting {
-    padding: 0% 25%;
-    text-align: center;
-}
-
 /* MAIN: HOME */
 
 home p#greeting {
-    padding: 0% 15%;
+    font-size: 22px;
     text-align: center;
+    padding: 3% 0% 3% 0%;
 }
 
 home ul {

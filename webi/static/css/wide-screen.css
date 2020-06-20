@@ -110,7 +110,7 @@ main p {
 home p#greeting {
     font-size: 30px;
     text-align: center;
-    padding: 0% 10%;
+    padding: 3% 0% 3%;
 }
 
 home ul {

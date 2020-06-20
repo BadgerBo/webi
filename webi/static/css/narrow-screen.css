@@ -67,10 +67,12 @@ nav td {
 nav a {
     text-decoration: none;
     color: black;
+    padding: 0%;
 }
 
 nav td a.active {
     color: #20A067;
+    font-weight: bolder;
 }
 
 nav td a:hover {
@@ -98,8 +100,7 @@ main p {
 /* MAIN: HOME */
 
 home p#greeting {
-    padding: 0% 15%;
-    text-align: center;
+    font-weight: 550;
 }
 
 home ul {
