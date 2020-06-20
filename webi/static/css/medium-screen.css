@@ -111,14 +111,19 @@ main home p#greeting {
     text-align: center;
 }
 
-/* MAIN: ABOUT */
+/* MAIN: HOME */
 
-about ul {
+home p#greeting {
+    padding: 0% 15%;
+    text-align: center;
+}
+
+home ul {
     padding-left: 8%;
     margin: 0%;
 }
 
-about li {
+home li {
     font-size: 18px;
     list-style-type: circle;
     text-align: left;

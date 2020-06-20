@@ -95,19 +95,19 @@ main p {
     margin: 0%;
 }
 
-main home p#greeting {
+/* MAIN: HOME */
+
+home p#greeting {
     padding: 0% 15%;
     text-align: center;
 }
 
-/* MAIN: ABOUT */
-
-about ul {
+home ul {
     padding-left: 12%;
     margin: 0%;
 }
 
-about li {
+home li {
     list-style-type: circle;
     line-height: 150%;
     padding: 2% 0%;

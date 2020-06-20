@@ -1,8 +1,22 @@
 {% extends "base.html" %}
 {% set active_page = "home" %}
 
-	{% block content %}
-		<home>
-			<p id="greeting">{{_('Greetings! You are at the main page of my personal website. Thank you for visiting and Welcome! :)')}}</p>
+    {% block content %}
+        <home>
+            <br><br>
+            <p id="greeting">{{_('Welcome to the main page of my personal website!')}}</p>
+            <br><br>
+			<p>{{_('My name is Olesya Barsukova. I prefer when people just call me Lesya. I am 23 years old. I was born in the northern town named Murmansk, which is located beyond the Arctic Circle.')}}<br></p>
+            <p>{{_('In 2015 applied to State University of Industrial Technologies and Design and moved to Saint-Petersburg. In 2019 I obtained a Bachelor Honours Degree in Economics. Among all disciplines I enjoyed the most Advanced Math, Statistics and Business Engish.')}}<br>
+            </p>
+            <p>{{_('Also, during the Computer Science cource, I faced basic concepts of Database. My high involvment in completing practical tasks revealed me that my true passion is programming. Since then, I became eager to devote my life to work in IT. So, nowdays I try my best to improve my coding skills to eventually get a job in this evergrowing and constantly evolving field.')}}</p><br>
+            <p>{{_('Some facts about me:')}}</p>
+            <ul>
+                <li>{{_('I like my name because it reminds me of forest')}}</li>
+                <li>{{_('I am half Balarusian')}}</li>
+                <li>{{_('I dream to see Sequoia Tree someday')}}</li>
+                <li>{{_('I usually eat kiwi with a skin')}}</li>
+                <li>{{_('Photograph of jellyfish was taken at St. Petersburg\'s Oceanarium')}}</li>
+            </ul>
 		</home>
 	{% endblock %}

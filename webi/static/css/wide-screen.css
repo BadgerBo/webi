@@ -105,19 +105,20 @@ main p {
     margin: 0%;
 }
 
-main home p#greeting {
-	padding: 0% 30%;
-	text-align: center;
+/* MAIN: HOME */
+
+home p#greeting {
+    font-size: 30px;
+    text-align: center;
+    padding: 0% 10%;
 }
 
-/* MAIN: ABOUT */
-
-about ul {
+home ul {
     padding-left: 8%;
     margin: 0%;
 }
 
-about li {
+home li {
     font-size: 24px;
     list-style-type: circle;
     text-align: left;
