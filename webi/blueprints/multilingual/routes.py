@@ -33,7 +33,7 @@ def before_request():
             abort(404)
 
 
-# adding route for page 'home'
+# adding route for page'home'
 @multilingual.route('/home/')
 def home():
     return render_template('home.html', title=_('home'))
@@ -43,6 +43,12 @@ def home():
 @multilingual.route('/experience/')
 def experience():
     return render_template('experience.html', title=_('experience'))
+
+
+# adding route for page 'education'
+@multilingual.route('/education/')
+def education():
+    return render_template('education.html', title=_('education'))
 
 
 # adding route for page 'skills'

@@ -11,9 +11,9 @@
         <meta property="og:url" content="http://olesyabarsukova.pythonanywhere.com/"/>
         <title>{{_('Olesya Barsukova')}}</title>
         <link rel="shortcut icon" href="{{ url_for('static', filename='images/badger.png') }}" type="image/x-icon">
-        <link rel="stylesheet" type="text/css" media="screen and (min-width: 1300px)" href="{{ url_for('static', filename='css/wide-screen.css') }}">
-        <link rel="stylesheet" type="text/css" media="(min-width: 1001px) and (max-width: 1299px)" href="{{ url_for('static', filename='css/medium-screen.css') }}">
-        <link rel="stylesheet" type="text/css" media="screen and (max-width: 1000px)" href="{{ url_for('static', filename='css/narrow-screen.css') }}"> 
+        <link rel="stylesheet" type="text/css" media="screen and (min-width: 1200px)" href="{{ url_for('static', filename='css/wide-screen.css') }}">
+        <link rel="stylesheet" type="text/css" media="(min-width: 701px) and (max-width: 1199px)" href="{{ url_for('static', filename='css/medium-screen.css') }}">
+        <link rel="stylesheet" type="text/css" media="screen and (max-width: 700px)" href="{{ url_for('static', filename='css/narrow-screen.css') }}"> 
     </head>
 
     <body>
@@ -26,22 +26,25 @@
         <nav class="wide">
             <table cellpadding="15px">
                 <tr>
-                    <td width="22%"><a  class="{{ 'active' if active_page == 'about' else '' }}" href="{{ url_for('multilingual.about') }}">{{_('About Me')}}</a></td>
-                    <td width="22%"><a  class="{{ 'active' if active_page == 'skills' else '' }}" href="{{ url_for('multilingual.skills') }}">{{_('Skillset')}}</a></td>
-                    <td width="22%"><a  class="{{ 'active' if active_page == 'portfolio' else '' }}" href="{{ url_for('multilingual.portfolio') }}">{{_('Portfolio')}}</a></td>
-                    <td width="34%"><a  class="{{ 'active' if active_page == 'contacts' else '' }}" href="{{ url_for('multilingual.contacts') }}">{{_('Contact Info')}}</a></td>
+                    <td><a  class="{{ 'active' if active_page == 'experience' else '' }}" href="{{ url_for('multilingual.experience') }}">{{_('Experience')}}</a></td>
+                    <td><a  class="{{ 'active' if active_page == 'experience' else '' }}" href="{{ url_for('multilingual.education') }}">{{_('Education')}}</a></td>
+                    <td><a  class="{{ 'active' if active_page == 'skills' else '' }}" href="{{ url_for('multilingual.skills') }}">{{_('Skills')}}</a></td>
+                    <td><a  class="{{ 'active' if active_page == 'portfolio' else '' }}" href="{{ url_for('multilingual.portfolio') }}">{{_('Portfolio')}}</a></td>
+                    <td><a  class="{{ 'active' if active_page == 'contacts' else '' }}" href="{{ url_for('multilingual.contacts') }}">{{_('Contacts')}}</a></td>
                 </tr>
             </table>
         </nav>
         <nav class="narrow">
-            <table cellpadding="15px">
+            <table>
                 <tr>
-                    <td width="50%"><a  class="{{ 'active' if active_page == 'about' else '' }}" href="{{ url_for('multilingual.about') }}">{{_('About Me')}}</a></td>
-                    <td width="50%"><a  class="{{ 'active' if active_page == 'skills' else '' }}" href="{{ url_for('multilingual.skills') }}">{{_('Skillset')}}</a></td>
+                    <td id="b"><a  class="{{ 'active' if active_page == 'experience' else '' }}" href="{{ url_for('multilingual.experience') }}">{{_('Experience')}}</a></td>
+                    <td><a  class="{{ 'active' if active_page == 'education' else '' }}" href="{{ url_for('multilingual.education') }}">{{_('Education')}}</a></td>
                 </tr>
                 <tr>
-                    <td width="50%"><a  class="{{ 'active' if active_page == 'portfolio' else '' }}" href="{{ url_for('multilingual.portfolio') }}">{{_('Portfolio')}}</a></td>
-                    <td width="50%"><a  class="{{ 'active' if active_page == 'contacts' else '' }}" href="{{ url_for('multilingual.contacts') }}">{{_('Contact Info')}}</a></td>
+                    <td id="b"><a  class="{{ 'active' if active_page == 'skills' else '' }}" href="{{ url_for('multilingual.skills') }}">{{_('Skills')}}</a></td>
+                    <td><a  class="{{ 'active' if active_page == 'portfolio' else '' }}" href="{{ url_for('multilingual.portfolio') }}">{{_('Portfolio')}}</a></td>
+                </tr>
+                    <td colspan="2"><a  class="{{ 'active' if active_page == 'contacts' else '' }}" href="{{ url_for('multilingual.contacts') }}">{{_('Contacts')}}</a></td>
                 </tr>
             </table>
         </nav>
