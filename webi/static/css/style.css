@@ -1,0 +1,365 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+
+body {
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    background: -webkit-radial-gradient(0% 50%, ellipse cover, #0D8568, #F08080);
+    background: -o-radial-gradient(0% 50%, ellipse cover, #0D8568, #F08080);
+    background: -moz-radial-gradient(0% 50%, ellipse cover, #0D8568, #F08080);
+    background: -ms-radial-gradient(0% 50%, ellipse cover, #0D8568, #F08080);
+    padding: 0px;
+    margin: 0px;
+}
+
+::selection {
+    color: white;
+    background: #5A5A5A;
+}
+
+.narrow {
+    display: none;
+}
+
+@media only screen and (max-width: 900px) {
+    body {
+        width: 900px;
+        background-size: 300%;
+    }
+}
+
+/* HEADER */
+
+header {
+    height: 300px;
+    width: 100%;
+    position: relative;
+    background-image: url("../images/header.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+header img {
+    width: 200px;
+    height: 200px;
+    border: 2px solid #E1E1E1;
+    border-radius: 10%;
+    position: absolute;
+    right: 50px;
+    bottom: 50px;
+}
+
+header a {
+    font-size: 50px;
+    color: white;
+    text-shadow: 1px 1px 1px #BCBEBD;
+    text-decoration: none;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    padding: 50px;
+}
+
+/* NAVIGATION */
+
+nav {
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    position: relative;
+    top: -2px;
+    left: -2px;
+    right: -3px;
+}
+
+nav table {
+    width: 100%;
+    height: 60px;
+    table-layout: auto;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+nav td a {
+    width: 100%;
+    font-size: 26px;
+    color: black;
+    white-space: nowrap;
+    text-decoration: none;
+    text-shadow: 0.5px 0.5px 1px #626567;
+    display: inline-block;
+    margin: 0%;
+	padding: 20px 3px 20px 1px;
+}
+
+nav td a.active {
+	color: white;
+}
+
+nav td a:hover {
+    background: #ffd7cc3b;
+}
+
+nav td a.active:hover {
+    color: white;
+    background: none;
+}
+
+/* MAIN */
+
+main {
+    width: 100%;
+    height: auto;
+    display: flex;
+    position: relative;
+    bottom: inherit;
+    border-top: groove #252525;
+    border-bottom: groove #252525;
+}
+
+main a {
+    color: #0921299f;
+    text-shadow: 1px 1px 1px #0921292d;
+}
+
+/* MAIN: HOME */
+
+main home {
+    line-height: 1.6;
+    position: relative;
+    padding: 50px 50px;
+}
+
+home p#greeting {
+    font-size: 24px;
+    text-align: center;
+    border-bottom: double #ffd7cc3b;
+    padding-bottom: 50px;
+}
+
+home ul {
+    padding-left: 8%;
+    margin: 0%;
+}
+
+home li {
+    font-size: 22px;
+    line-height: 80%;
+    line-height: 150%;
+    list-style-type: circle;
+    padding: 0.5% 0%;
+    margin: 0%;
+}
+
+/* MAIN: EXPERIENCE */
+
+experience {
+    width: 100%;
+    line-height: 1.6;
+    padding: 50px;
+}
+
+experience table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+experience th {
+    text-align: left;
+    font-size: 22px;
+    font-weight: lighter;
+    background: #ffd7cc3b;
+    padding: 0px 0px 0px 30px;
+    margin-top: 100px;
+}
+
+experience table td {
+    padding: 30px;
+    border-top: double #ffd7cc3b;
+}
+
+experience li {
+    list-style-type: circle;
+    padding: 5px 0px;
+}
+
+/* MAIN: EDUCATION */
+
+education {
+    width: 100%;
+    line-height: 1.6;
+    padding: 50px;
+}
+
+education table {
+    width: 100%;
+}
+
+education table th {
+    text-align: center;
+    font-size: 22px;
+	font-weight: lighter;
+    background: #ffd7cc3b;
+}
+
+education table td {
+    border-top: double #ffd7cc3b;
+    padding: 50px 30px 60px 30px;
+}
+
+education li {
+    list-style-type: circle;
+    padding: 5px;
+}
+
+/* MAIN: SKILLS */
+
+skills {
+    font-size: 24px;
+    text-align: center;
+    padding: 50px;
+}
+
+skills block {
+    border: double #ffd7cc3b;
+    background: #ffd7cc09;
+    /*ffd7cc10*/
+    display: inline-block;
+    padding: 20px 30px;
+    margin: 30px;
+}
+
+/* MAIN: PORTFOLIO */
+
+portfolio {
+    width: 100%;
+    line-height: 1.6;
+    padding: 50px;
+}
+
+portfolio table {
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+portfolio th {
+    text-align: left;
+    font-size: 22px;
+    font-weight: lighter;
+    background: #ffd7cc3b;
+    padding: 0px 0px 0px 30px;
+    border: none;
+    margin-top: 100px;
+}
+
+portfolio td {
+    padding: 50px 30px;
+    border-top: double #ffd7cc3b;;
+}
+
+portfolio td.links a img {
+    width: 60px;
+    height: 60px;
+    display: block;
+    opacity: 0.7;
+    box-shadow: none;
+    padding: 10px 10px;
+}
+
+portfolio td.links a img:hover {
+    transform: scale(1.2);
+}
+
+/* MAIN: CONTACTS */
+
+contacts {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 75px 0px;
+}
+
+contacts links {
+    width: 20%;
+    padding: 0px 90px 0px 0px;
+}
+
+contacts links img {
+    height: 80px;
+    width: 80px;
+    text-align: right;
+    display: block;
+    padding: 15px;
+    margin-left:auto; 
+    margin-right:0;
+}
+
+contacts links img:hover {
+    transform: scale(1.1);
+}
+
+contacts email {
+    width: 45%;
+    border-left: groove #252525;
+    padding: 0px 40px 0px 100px;
+}
+
+contacts email input, textarea {
+    width: 100%;
+    font-size: 14pt;
+    color: black;
+    background-color: #ffd7cc3b;
+    border: none;
+    outline: none;
+    padding: 15px 10px;
+    margin: 2px;
+}
+
+contacts email textarea {
+    height: 200px;
+    resize: none;
+}
+
+contacts ::placeholder {
+    color: #424242;
+  }
+
+contacts email .submit {
+    color: white;
+    background-color: #3C6B59;
+    width: 100%;
+    margin: 0px 10px;
+}
+
+contacts email .submit:hover {
+    opacity: 0.8;
+}
+
+/* FOOTER */
+
+footer {
+    width: 100%;
+    height: 60px;
+    position: relative;
+    left: 0;
+    bottom: 0;
+}
+
+footer language img {
+    width: 45px;
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+}
+
+footer copyright {
+    font-size: 14px;
+    color: #E1E1E1;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+}
