@@ -3,48 +3,33 @@
 <html>
     <head>
     	<meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
         <meta property="og:type" content="website"/>
         <meta property="og:title" content="Olesya Barsukova"/>
         <meta property="og:description" content="Personal website"/>
         <meta property="og:image" content="https://i.imgur.com/vClPVtJ.jpg"/>
         <meta property="og:url" content="http://olesyabarsukova.pythonanywhere.com/"/>
-        <title>{{_('Olesya Barsukova')}}</title>
+        <title>{{_('Олеся Барсукова')}}</title>
         <link rel="shortcut icon" href="{{ url_for('static', filename='images/badger.png') }}" type="image/x-icon">
-        <link rel="stylesheet" type="text/css" media="screen and (min-width: 1200px)" href="{{ url_for('static', filename='css/wide-screen.css') }}">
-        <link rel="stylesheet" type="text/css" media="(min-width: 701px) and (max-width: 1199px)" href="{{ url_for('static', filename='css/medium-screen.css') }}">
-        <link rel="stylesheet" type="text/css" media="screen and (max-width: 700px)" href="{{ url_for('static', filename='css/narrow-screen.css') }}"> 
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=320, height=device-height, target-densitydpi=medium-dpi" />
+        
     </head>
 
     <body>
 
     	<header>
             <img alt="" src="{{ url_for('static', filename='images/avatar.jpg') }}">
-            <a  href="{{ url_for('multilingual.home') }}">{{_('Olesya Barsukova')}}</a>
+            <a  href="{{ url_for('multilingual.home') }}">{{_('Олеся Барсукова')}}</a>
         </header>
 
-        <nav class="wide">
-            <table cellpadding="15px">
-                <tr>
-                    <td><a  class="{{ 'active' if active_page == 'experience' else '' }}" href="{{ url_for('multilingual.experience') }}">{{_('Experience')}}</a></td>
-                    <td><a  class="{{ 'active' if active_page == 'experience' else '' }}" href="{{ url_for('multilingual.education') }}">{{_('Education')}}</a></td>
-                    <td><a  class="{{ 'active' if active_page == 'skills' else '' }}" href="{{ url_for('multilingual.skills') }}">{{_('Skills')}}</a></td>
-                    <td><a  class="{{ 'active' if active_page == 'portfolio' else '' }}" href="{{ url_for('multilingual.portfolio') }}">{{_('Portfolio')}}</a></td>
-                    <td><a  class="{{ 'active' if active_page == 'contacts' else '' }}" href="{{ url_for('multilingual.contacts') }}">{{_('Contacts')}}</a></td>
-                </tr>
-            </table>
-        </nav>
-        <nav class="narrow">
+        <nav>
             <table>
                 <tr>
-                    <td id="b"><a  class="{{ 'active' if active_page == 'experience' else '' }}" href="{{ url_for('multilingual.experience') }}">{{_('Experience')}}</a></td>
-                    <td><a  class="{{ 'active' if active_page == 'education' else '' }}" href="{{ url_for('multilingual.education') }}">{{_('Education')}}</a></td>
-                </tr>
-                <tr>
-                    <td id="b"><a  class="{{ 'active' if active_page == 'skills' else '' }}" href="{{ url_for('multilingual.skills') }}">{{_('Skills')}}</a></td>
-                    <td><a  class="{{ 'active' if active_page == 'portfolio' else '' }}" href="{{ url_for('multilingual.portfolio') }}">{{_('Portfolio')}}</a></td>
-                </tr>
-                    <td colspan="2"><a  class="{{ 'active' if active_page == 'contacts' else '' }}" href="{{ url_for('multilingual.contacts') }}">{{_('Contacts')}}</a></td>
+                    <td><a  class="{{ 'active' if active_page == 'experience' else '' }}" href="{{ url_for('multilingual.experience') }}">{{_('Опыт Работы')}}</a></td>
+                    <td><a  class="{{ 'active' if active_page == 'education' else '' }}" href="{{ url_for('multilingual.education') }}">{{_('Образование')}}</a></td>
+                    <td><a  class="{{ 'active' if active_page == 'skills' else '' }}" href="{{ url_for('multilingual.skills') }}">{{_('Навыки')}}</a></td>
+                    <td><a  class="{{ 'active' if active_page == 'portfolio' else '' }}" href="{{ url_for('multilingual.portfolio') }}">{{_('Портфолио')}}</a></td>
+                    <td><a  class="{{ 'active' if active_page == 'contacts' else '' }}" href="{{ url_for('multilingual.contacts') }}">{{_('Контакты')}}</a></td>
                 </tr>
             </table>
         </nav>
@@ -56,14 +41,14 @@
         
         <footer>
             <language>
-            {% if g.lang_code == 'ru' %}    
-                <a href="{{ url_for(request.endpoint, lang_code='en') }}"><img alt="" src="{{ url_for('static', filename='images/flag-en.svg') }}"></a>
+            {% if g.lang_code == 'en' %}    
+                <a href="{{ url_for(request.endpoint, lang_code='ru') }}"><img alt="" src="{{ url_for('static', filename='images/flag-ru.jpg') }}"></a>
             {% endif %}
-            {% if g.lang_code == 'en' %}
-                <a href="{{ url_for(request.endpoint, lang_code='ru') }}"><img alt="" src="{{ url_for('static', filename='images/flag-ru.svg') }}"></a>
+            {% if g.lang_code == 'ru' %}
+                <a href="{{ url_for(request.endpoint, lang_code='en') }}"><img alt="" src="{{ url_for('static', filename='images/flag-en.jpg') }}"></a>
             {% endif %}
             </language>
-            <copyright>© 2020. {{_('All rights reserved.')}}</copyright>
+            <copyright>© 2020. {{_('Все права защищены.')}}</copyright>
         </footer>
         
     </body>

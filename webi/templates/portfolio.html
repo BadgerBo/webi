@@ -2,83 +2,37 @@
 {% set active_page = "portfolio" %}
 
 	{% block content %}
-		<portfolio class="wide">
-			<table cellpadding="15px">
+		<portfolio>
+			<table>
 				<tr>
-					<th colspan="2">{{_('Telegram Bot &laquo;Book Advisor&raquo;')}}</th>
+					<th width="35%">{{_('Проект')}}</th>
+					<th width="65%">{{_('Краткое описание')}}</th>
+					<th width="20%">{{_('Ссылки')}}</th>
 				</tr>
 				<tr>
-					<td class="screenshot" rowspan="2" width="70%">
-						<a href="https://i.imgur.com/qalx2f6.jpg" target="_black"><img class="screenshot" src="{{ url_for('static', filename='images/screenshot-libot.jpg')}}"/></a>
-					</td>
-					<td>{{_('Bot was created to answer the question &laquo;Which book I want to read next?&raquo; by recommending particular book from Goodreads.com.')}}</td>
-				</tr>
-				<tr>
-					<td class="links" align="center" nowrap>
-						<a href="https://t.me/BadgerBo_libot" target="_black"><img src="{{ url_for('static', filename='images/icon-telegram.png')}}"></a>
-						<a href="https://github.com/BadgerBo/libot" target="_black"><img src="{{ url_for('static', filename='images/icon-github.png')}}"></a>
-					</td>
-				</tr>
-			</table>
-			<br>
-			<br>
-			<table cellpadding="15px">
-				<tr>
-					<th colspan="2">{{_('Personal Website')}}</th>
-				</tr>
-				<tr>
-					<td class="screenshot" rowspan="2" width="70%">
-						<a href="https://i.imgur.com/XUhxWC7.jpg" target="_black"><img class="screenshot" src="{{ url_for('static', filename='images/screenshot-webi.jpg')}}"/></a>
-					</td>
-					<td >{{_('This website is my first attempt in web-development and my first project as well. The application was created by means of web framework Flask.')}}</td>
-				</tr>
-				<tr>
-					<td class="links" align="center" nowrap>
-						<a href="https://github.com/BadgerBo/webi" target="_black"><img src="{{ url_for('static', filename='images/icon-github.png')}}"></a></td>
-				</tr>
-			</table>
-		</portfolio>
-
-		<portfolio class="narrow">
-			<br>
-			<table cellpadding="10px">
-				<tr>
-					<th>{{_('Telegram Bot &laquo;Book Advisor&raquo;')}}</th>
-				</tr>
-				<tr>
-					<td class="screenshot" colspan="2">
-						<a href="https://i.imgur.com/qalx2f6.jpg" target="_black"><img class="screenshot" src="{{ url_for('static', filename='images/screenshot-libot.jpg')}}"/></a>
+					<td>{{_('Инструмент для автоматизации ABC-XYZ анализа')}}</td>
+					<td>{{_('ABC-XYZ анализ - это инструмент, позволяющий разделить продукцию по степени стабильности продаж и уровня колебаний потребления. Другими словами, он помогает найти слабые звенья в ассортименте Компании. Подробнее про него можно прочитать <a href="https://abcsupplychain.com/en/abc-xyz-analyse/">тут</a>.')}}
+						Работа скрипта имеет следующий алгоритм: в JSON записываются необходимые данные (название базы данных, таблиц и SQL запросы), после чего запускается исполняемый файл. Результатом работы является сформированный в фомате PDF отчет с круговой диаграммой и таблицей товаров, классифицированных в соответсвии с подсчитанными показателями.</td>
+					<td class="links">
+						<a href="https://github.com/BadgerBo/abcxyz_analysis" target="_black"><img src="{{ url_for('static', filename='images/icon-github.png')}}"></a>
 					</td>
 				</tr>
 				<tr>
-					<td>{{_('Bot was created to answer the question &laquo;Which book I want to read next?&raquo; by recommending particular book from Goodreads.com.')}}</td>
-				</tr>
-				<tr>
+					<td>{{_('Телеграм Бот &laquo;Book Advisor&raquo;')}}</td>
+					<td>{{_('Этот бот был создан специально чтобы ответить на извечный вопрос &laquo;Какую книгу мне прочесть следующей?&raquo;. Книголюбителю предлагается выбрать одну из доступных опций, а в качестве ответа он получит предложение в рамках указанных критериев. 
+						Подробно ознакомиться с произведением можно пройдя по ссылке на Goodreads.com. Именно оттуда парсится информация, предоставляемая ботом.')}}</td>
 					<td class="links">
 						<a href="https://t.me/BadgerBo_libot" target="_black"><img src="{{ url_for('static', filename='images/icon-telegram.png')}}"></a>
 						<a href="https://github.com/BadgerBo/libot" target="_black"><img src="{{ url_for('static', filename='images/icon-github.png')}}"></a>
 					</td>
 				</tr>
-			</table>
-			<br>
-			<br>
-			<table cellpadding="10px">
 				<tr>
-					<th>{{_('Personal Website')}}</th>
-				</tr>
-				<tr>
-					<td class="screenshot">
-						<a href="https://i.imgur.com/XUhxWC7.jpg" target="_black"><img class="screenshot" src="{{ url_for('static', filename='images/screenshot-webi.jpg')}}"/></a>
-					</td>
-				</tr>
-				<tr>
-					<td>{{_('This website is my first attempt in web-development and my first project as well. The application was created by means of web framework Flask.')}}</td>
-				</tr>
-				<tr>
+					<td>{{_('Личный Сайт')}}</td>
+					<td>{{_('Речь идет об этом сайте-визитке, который является моей первой попыткой в веб-разработке. Бэкэнд написан на Python с применением веб-фреймворка Flask. Фронт реализован на HTML и CSS.')}}</td>
 					<td class="links">
 						<a href="https://github.com/BadgerBo/webi" target="_black"><img src="{{ url_for('static', filename='images/icon-github.png')}}"></a>
 					</td>
 				</tr>
 			</table>
-		</portfolio>	
+		</portfolio>
 	{% endblock %}

@@ -2,62 +2,22 @@
 {% set active_page = "skills" %}
 
     {% block content %}
-        <skills class="wide">
-            <table cellpadding="15px">
-                <tr>
-                    <td width="45%">
-                        <p>{{_('My first programming language was C#. At that time I knew nearly nothing about coding. So, it was a rough challenge, for sure. Nowdays I am still truelly amazed that I havent quit just right there.')}}</p>
-                        <p>{{_('After some time, I resumed my attempts with Python and fell in love from the first line. I respect the syntactic beauty and minimalism of this language.')}}</p>
-                        <p>{{_('Recenetly I decided to dive into web-development and started to study HTML and CSS as well.')}}</p>
-                        <p>{{_('Nowadays I take interest in SQL and I am planning to learn more about data and databases.')}}<br></p>
-                        <p>{{_('If were to describe my skills, I would do it somehow like this:')}}<br></p>
-                    </td>
-
-                    <td width="40%">
-                        <ul>
-                            <li>Python<br><progress min="0" max="100" value="65"></progress>
-                            </li>
-                            <li>C#<br><progress min="0" max="100" value="15"></progress>
-                            </li>
-                            <li>HTML<br><progress min="0" max="100" value="60"></progress>
-                            </li>
-                            <li>CSS<br><progress min="0" max="100" value="45"></progress>
-                            </li>
-                            <li>SQL<br><progress min="0" max="100" value="35"></progress>
-                            </li>
-                        </ul>
-                    </td>
-                </tr>
-            </table>
-        </skills>
-
-        <skills class="narrow">
-            <p>{{_('My first programming language was C#. At that time I knew nearly nothing about coding. So, it was a rough challenge, for sure. Nowdays I am still truelly amazed that I havent quit just right there.')}}</p>
-            <p>{{_('After some time, I resumed my attempts with Python and fell in love from the first line. I respect the syntactic beauty and minimalism of this language.')}}</p>
-            <p>{{_('Recenetly I decided to dive into web-development and started to study HTML and CSS as well.')}}</p>
-            <p>{{_('Nowadays I take interest in SQL and I am planning to learn more about data and databases.')}}<br></p>
-            <p>{{_('If were to describe my skills, I would do it somehow like this:')}}<br></p>
-            <table cellpadding="15px">
-                <tr>
-                    <td width="25%">Python</td>
-                    <td width="65%"><progress min="0" max="100" value="65"></progress></td>
-                </tr>
-                <tr>
-                    <td width="25%">C#</td>
-                    <td width="65%"><progress min="0" max="100" value="15"></progress></td>
-                </tr>
-                <tr>
-                    <td width="25%">HTML</td>
-                    <td width="65%"><progress min="0" max="100" value="60"></progress></td>
-                </tr>
-                <tr>
-                    <td width="25%">CSS</td>
-                    <td width="65%"><progress min="0" max="100" value="45"></progress></td>
-                </tr>
-                <tr>
-                    <td width="25%">SQL</td>
-                    <td width="65%"><progress min="0" max="100" value="35"></progress></td>
-                </tr>
-            </table>
+        <skills>
+            <block>Linux</block>
+            <block>Git</block>
+            <block>Python</block>
+            <block>Java</block>
+            <block>HTML</block>
+            <block>CSS</block>
+            <block>SQL</block>
+            <block>JSON</block>
+            <block>XML</block>
+            <block>XPath</block>
+            <block>Flask</block>
+            <block>Selenium</block>
+            <block>Test Project</block>
+            <block>Postman</block>
+            <block>Jira</block>
+            <block>{{_('Английский язык')}}</block>
         </skills>
     {% endblock %}
