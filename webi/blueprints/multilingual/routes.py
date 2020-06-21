@@ -22,7 +22,7 @@ def before_request():
     if g.lang_code not in current_app.config['LANGUAGES']:
         adapter = app.url_map.bind('')
         try:
-            endpoint, args = adapter.match('/en' + request.full_path.rstrip('/ ?'))
+            endpoint, args = adapter.match('/ru' + request.full_path.rstrip('/ ?'))
             return redirect(url_for(endpoint, **args), 301)
         except:
             abort(404)
