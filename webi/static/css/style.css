@@ -127,7 +127,7 @@ main a {
 
 /* MAIN: HOME */
 
-main home {
+home {
     line-height: 1.6;
     position: relative;
     padding: 50px 50px;
@@ -138,20 +138,6 @@ home p#greeting {
     text-align: center;
     border-bottom: double #ffd7cc3b;
     padding-bottom: 50px;
-}
-
-home ul {
-    padding-left: 8%;
-    margin: 0%;
-}
-
-home li {
-    font-size: 22px;
-    line-height: 80%;
-    line-height: 150%;
-    list-style-type: circle;
-    padding: 0.5% 0%;
-    margin: 0%;
 }
 
 /* MAIN: EXPERIENCE */
@@ -226,7 +212,6 @@ skills {
 skills block {
     border: double #ffd7cc3b;
     background: #ffd7cc09;
-    /*ffd7cc10*/
     display: inline-block;
     padding: 20px 30px;
     margin: 30px;
