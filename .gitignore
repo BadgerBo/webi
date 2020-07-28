@@ -135,3 +135,6 @@ dmypy.json
 
 # Spare Screenshots
 .spare_screenshots
+
+# macOS
+.DS_Store
